@@ -11,11 +11,11 @@ public_folder: "/images"
 
 collections:
   - name: "mascota"
-    label: "Mascota"
+    label: "Datos de la Mascota"
     files:
-      - name: "info"
-        label: "Información de la mascota"
-        file: "data/mascota.yml"
+      - file: "data/mascota.yml"
+        label: "Información de la Mascota"
+        name: "mascota"
         fields:
           - { label: "Nombre", name: "nombre", widget: "string" }
           - { label: "Descripción", name: "descripcion", widget: "text" }
