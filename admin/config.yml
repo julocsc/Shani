@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: julocsc/Shani/  # usa tu propio repo aquí
   branch: main
   site_domain: https://julocsc.github.io/Shani/
