@@ -1,10 +1,4 @@
----
-nombre: Eusebio
-descripcion: "Es un perrito normal color negro pekines que solo aproximadamente
-  tiene 7 años "
-whatsapp: "990367465"
-imagen: /images/12.jpg
----
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -22,24 +16,10 @@ imagen: /images/12.jpg
 </head>
 <body>
   <div class="card">
-    <img id="mascota-img" src="" alt="Foto de la mascota">
-    <h1 id="mascota-nombre"></h1>
-    <p><strong>Descripción:</strong> <span id="mascota-desc"></span></p>
-    <p><strong>Contacto:</strong> <a id="mascota-ws" href="#" class="button" target="_blank">Enviar mensaje por WhatsApp</a></p>
+    <img src="images/mascota.jpg" alt="Foto de la mascota">
+    <h1>{{ mascota.nombre }}</h1>
+    <p><strong>Descripción:</strong> {{ mascota.descripcion }}</p>
+    <p><strong>Contacto:</strong> <a href="https://wa.me/{{ mascota.whatsapp }}" class="button">Enviar mensaje por WhatsApp</a></p>
   </div>
-
-  <!-- Cargar YAML y convertir -->
-  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-  <script>
-    fetch('data/mascota.yml')
-      .then(response => response.text())
-      .then(yamlText => {
-        const data = jsyaml.load(yamlText);
-        document.getElementById('mascota-img').src = data.imagen;
-        document.getElementById('mascota-nombre').textContent = data.nombre;
-        document.getElementById('mascota-desc').textContent = data.descripcion;
-        document.getElementById('mascota-ws').href = data.whatsapp;
-      });
-  </script>
 </body>
 </html>

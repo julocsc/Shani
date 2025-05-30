@@ -1,20 +1,17 @@
+
 backend:
-  name: github
-  repo: julocsc/Shani  # usa tu propio repo aquí
+  name: git-gateway
   branch: main
-  auth_scope: repo  
-  base_url: https://decap-oauth.vercel.app
-  auth_endpoint: /api/auth
-  client_id: Ov23liKnBFdyJfPfzfYu
+
 media_folder: "images"
 public_folder: "/images"
-locale: 'es'
+
 collections:
   - name: "mascota"
     label: "Datos de la Mascota"
     files:
       - file: "data/mascota.yml"
-        label: "Mascota"
+        label: "Información de la Mascota"
         name: "mascota"
         fields:
           - { label: "Nombre", name: "nombre", widget: "string" }
