@@ -1,6 +1,10 @@
 backend:
   name: git-gateway
+  repo: julocsc/Shani/  # usa tu propio repo aquí
   branch: main
+  site_domain: https://julocsc.github.io/Shani/
+  base_url: https://decap-oauth.vercel.app
+  auth_endpoint: auth
 
 local_backend: true
 
