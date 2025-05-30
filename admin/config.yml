@@ -15,11 +15,11 @@ locale: 'es'
 
 collections:
   - name: "mascota"
-    label: "Mascota"
+    label: "Datos de la Mascota"
     files:
-      - label: "Datos de la Mascota"
-        name: "datos"
-        file: "index.html"
+      - file: "data/mascota.yml"
+        label: "Mascota"
+        name: "mascota"
         fields:
           - { label: "Nombre", name: "nombre", widget: "string" }
           - { label: "Descripción", name: "descripcion", widget: "text" }
