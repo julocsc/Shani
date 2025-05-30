@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: 'es'
+
+collections:
+  - name: "mascota"
+    label: "Mascota"
+    files:
+      - label: "Datos de la Mascota"
+        name: "datos"
+        file: "index.html"
+        fields:
+          - { label: "Nombre", name: "nombre", widget: "string" }
+          - { label: "Descripción", name: "descripcion", widget: "text" }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string" }
+          - { label: "Imagen", name: "imagen", widget: "image" }
