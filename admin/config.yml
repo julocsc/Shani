@@ -1,18 +1,20 @@
-
 backend:
-  name: git-gateway
+  name: github
+  repo: julocsc/Shani  # ← reemplaza con tu usuario/repositorio correcto
   branch: main
-
+  base_url: https://decap-oauth.vercel.app  # ← usa tu servidor OAuth (como este de ejemplo)
+  auth_endpoint: /api/auth
+  client_id: Ov23liKnBFdyJfPfzfYu
 media_folder: "images"
 public_folder: "/images"
 
 collections:
   - name: "mascota"
-    label: "Datos de la Mascota"
+    label: "Mascota"
     files:
-      - file: "data/mascota.yml"
-        label: "Información de la Mascota"
-        name: "mascota"
+      - name: "info"
+        label: "Información de la mascota"
+        file: "data/mascota.yml"
         fields:
           - { label: "Nombre", name: "nombre", widget: "string" }
           - { label: "Descripción", name: "descripcion", widget: "text" }
