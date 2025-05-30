@@ -13,11 +13,12 @@ collections:
   - name: "mascota"
     label: "Datos de la Mascota"
     files:
-      - file: "data/mascota.yml"
-        label: "Información de la Mascota"
-        name: "mascota"
+      - file: "data/mascota.json"
+        label: "Ficha Mascota"
+        name: "ficha_mascota"
+        format: "json"
         fields:
           - { label: "Nombre", name: "nombre", widget: "string" }
           - { label: "Descripción", name: "descripcion", widget: "text" }
-          - { label: "WhatsApp", name: "whatsapp", widget: "string" }
+          - { label: "WhatsApp (con código de país)", name: "whatsapp", widget: "string" }
           - { label: "Imagen", name: "imagen", widget: "image" }
