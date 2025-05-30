@@ -1,12 +1,12 @@
 backend:
   name: github
-  repo: julocsc/Shani
+  repo: julocsc/Shani/  # usa tu propio repo aquí
   branch: main
   auth_scope: repo
+  site_domain: https://julocsc.github.io/Shani/
   base_url: https://decap-oauth.vercel.app
   auth_endpoint: /api/auth
   client_id: Ov23liKnBFdyJfPfzfYu
-
 local_backend: true
 
 media_folder: "images"
