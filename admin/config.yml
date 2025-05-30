@@ -4,7 +4,7 @@ backend:
   branch: main
   site_domain: https://julocsc.github.io/Shani/
   base_url: https://decap-oauth.vercel.app
-  auth_endpoint: auth
+  auth_endpoint: Ov23liKnBFdyJfPfzfYu
 
 local_backend: true
 
