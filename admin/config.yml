@@ -19,6 +19,8 @@ collections:
         format: "json"
         fields:
           - { label: "Nombre", name: "nombre", widget: "string" }
+          - { label: "Raza", name: "raza", widget: "string" }
+          - { label: "Edad", name: "edad", widget: "string" }
           - { label: "Descripción", name: "descripcion", widget: "text" }
           - { label: "WhatsApp (con código de país)", name: "whatsapp", widget: "string" }
           - { label: "Imagen", name: "imagen", widget: "image" }
