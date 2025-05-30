@@ -28,8 +28,8 @@
       .then(res => res.json())
       .then(mascota => {
         document.getElementById("nombre").textContent = mascota.nombre;
-        document.getElementById("nombre").textContent = mascota.raza;
-        document.getElementById("nombre").textContent = mascota.edad;
+        document.getElementById("raza").textContent = mascota.raza;
+        document.getElementById("edad").textContent = mascota.edad;
         document.getElementById("descripcion").textContent = mascota.descripcion;
         document.getElementById("foto-mascota").src = mascota.imagen;
         document.getElementById("whatsapp").href = "https://wa.me/" + mascota.whatsapp;
