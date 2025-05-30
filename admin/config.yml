@@ -1,8 +1,9 @@
 backend:
   name: github
-  repo: julocsc/Shani  # ← reemplaza con tu usuario/repositorio correcto
+  repo: julocsc/Shani
   branch: main
-  base_url: https://decap-oauth.vercel.app  # ← usa tu servidor OAuth (como este de ejemplo)
+  auth_scope: repo
+  base_url: https://decap-oauth.vercel.app
   auth_endpoint: /api/auth
   client_id: Ov23liKnBFdyJfPfzfYu
 media_folder: "images"
