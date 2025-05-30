@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: julocsc/Shani/  # usa tu propio repo aquí
+  repo: julocsc/Shani  # usa tu propio repo aquí
   branch: main
   auth_scope: repo  
   base_url: https://decap-oauth.vercel.app
