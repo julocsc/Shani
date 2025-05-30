@@ -6,7 +6,7 @@ backend:
   base_url: https://decap-oauth.vercel.app
   auth_endpoint: /api/auth
   client_id: Ov23liKnBFdyJfPfzfYu
-local_backend: true
+
 
 media_folder: "images"
 public_folder: "/images"
