@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>QR Mascota - Información</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: sans-serif; padding: 2em; background: #f9f9f9; color: #333; }
-    .card { max-width: 500px; margin: auto; background: white; padding: 2em; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    img { max-width: 100%; border-radius: 10px; }
-    h1 { font-size: 1.5em; margin-bottom: 0.5em; }
-    p { margin-bottom: 1em; }
-    a.button { display: inline-block; padding: 0.5em 1em; background: #4CAF50; color: white; border-radius: 5px; text-decoration: none; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¡Hola! Me llamo Luna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="card">
-    <img id="foto-mascota" src="" alt="Foto de la mascota">
-    <h1 id="nombre"></h1>
-    <p id="raza"></p>
-    <p id="edad"></p>
-    <p><strong>Descripción:</strong> <span id="descripcion"></span></p>
-    <p><strong>Contacto:</strong> <a id="whatsapp" href="#" class="button">Enviar mensaje por WhatsApp</a></p>
-  </div>
+  <div class="container">
+    <h1>🐶 ¡Hola! Me llamo Luna</h1>
+    <img src="images/luna.jpg" alt="Foto de Luna" />
+    <div class="section">
+      <p><span class="label">Edad:</span> 2 años</p>
+      <p><span class="label">Raza:</span> Schnauzer miniatura</p>
+      <p><span class="label">Color:</span> Gris y blanco</p>
+      <p><span class="label">Carácter:</span> Muy juguetona, tímida con extraños</p>
+      <p><span class="label">Condiciones médicas:</span> Toma medicina diaria (por favor no alimentarla)</p>
+    </div>
+    <div class="section">
+      <p><span class="label">Si me pierdo jugando:</span> Contacta a mi dueñ@</p>
+    </div>
 
-  <script>
-    fetch("data/mascota.json")
-      .then(res => res.json())
-      .then(mascota => {
-        document.getElementById("nombre").textContent = mascota.nombre;
-        document.getElementById("raza").textContent = mascota.raza;
-        document.getElementById("edad").textContent = mascota.edad;
-        document.getElementById("descripcion").textContent = mascota.descripcion;
-        document.getElementById("foto-mascota").src = mascota.imagen;
-        document.getElementById("whatsapp").href = "https://wa.me/" + mascota.whatsapp;
-      })
-      .catch(err => {
-        console.error("No se pudo cargar la información:", err);
-      });
-  </script>
+    <div class="buttons">
+      <a class="wa-button" href="contacto.html">🐾 Ayúdame a volver a casa</a>
+    </div>
+
+    <div class="footer">
+      <a href="https://wa.me/+51904201656" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <span>Sistictech - Todos los derechos reservados</span>
+    </div>
+  </div>
 </body>
 </html>
